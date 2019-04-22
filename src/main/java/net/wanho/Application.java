@@ -1,0 +1,20 @@
+package net.wanho;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.SpringBootConfiguration;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+/*@SpringBootConfiguration
+@EnableAutoConfiguration*/
+@SpringBootApplication
+/*自定义自动扫包的位置*/
+@ComponentScan(basePackages = "net.wanho")
+public class Application {
+
+    public static void main(String[] args) {
+        /*启动方法 */
+        SpringApplication.run(Application.class, args);
+    }
+
+}
